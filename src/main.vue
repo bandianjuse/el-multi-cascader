@@ -9,7 +9,7 @@
           <el-tree
             :data="options"
             show-checkbox
-            node-key="value"
+            :node-key="nodeKey"
             ref="tree"
             highlight-current
             @check-change="checkEvent">
@@ -35,6 +35,10 @@
       placeholder: String,
       value: Array,
       options: Array,
+      nodeKey: {
+        type: String,
+        default: 'id'
+      }
     },
     methods: {
       expandEvent(event) {

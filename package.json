@@ -1,0 +1,19 @@
+{
+  "name": "el-multi-cascader",
+  "version": "1.0.0",
+  "description": "> 基于element ui 1.x版本的多选级联组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bandianjuse/el-multi-cascader.git"
+  },
+  "author": "bandianjuse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bandianjuse/el-multi-cascader/issues"
+  },
+  "homepage": "https://github.com/bandianjuse/el-multi-cascader#readme"
+}
