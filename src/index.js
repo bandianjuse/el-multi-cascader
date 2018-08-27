@@ -1,4 +1,4 @@
-import ElMultiCascader from './src/main';
+import ElMultiCascader from './main.vue';
 
 export default {
   install(Vue) {
