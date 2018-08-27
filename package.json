@@ -1,6 +1,6 @@
 {
   "name": "el-multi-cascader",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "> 基于element ui 1.x版本的多选级联组件",
   "main": "lib/index.js",
   "files": [
