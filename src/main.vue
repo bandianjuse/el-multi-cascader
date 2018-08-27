@@ -28,7 +28,7 @@
     data() {
       return {
         inputValue: null,
-        isExpand: false,
+        isExpand: false
       };
     },
     props: {
@@ -57,15 +57,14 @@
         });
         this.inputValue = nodesLabel.join('、');
       },
-
       checkEvent() {
         this.$emit('input', this.$refs.tree.getCheckedKeys());
-      },
+      }
     },
     watch: {
       value() {
         this.getNodesLabel();
-      },
+      }
     },
     mounted() {
       this.getNodesLabel();
@@ -73,7 +72,7 @@
       document.addEventListener('click', () => {
         if (this.isExpand) this.isExpand = false;
       });
-    },
+    }
   };
 </script>
 
