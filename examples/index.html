@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@1.4/lib/theme-default/index.css">
+</head>
+<body>
+<div id="app"></div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui@1.4/lib/index.js"></script>
+<script src="../lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                cascaderData: [],
+                testData: [
+                    {
+                        label: '互联网开发',
+                        value: '44',
+                        children: [
+                            {
+                                label: 'APP开发',
+                                value: '4401',
+                                children: []
+
+                            }
+                        ]
+                    },
+                    {
+                        label: '微信开发',
+                        value: '4402',
+                        children: []
+
+                    }
+                ]
+            }
+        },
+        template: '<div> 测试：<el-multi-cascader v-model="cascaderData" :options="testData" nodeKey="value" placeholder="请选择"></el-multi-cascader></div>'
+    })
+</script>
+</body>
+</html>
