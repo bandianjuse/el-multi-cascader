@@ -16,6 +16,7 @@
         data() {
             return {
                 cascaderData: [],
+                cascaderData2: [],
                 testData: [
                     {
                         label: '互联网开发',
@@ -38,7 +39,10 @@
                 ]
             }
         },
-        template: '<div> 测试：<el-multi-cascader v-model="cascaderData" :options="testData" nodeKey="value" placeholder="请选择"></el-multi-cascader></div>'
+        template: '<div> ' +
+        '基础：<div style="margin-bottom: 20px"><el-multi-cascader v-model="cascaderData" :options="testData" nodeKey="value" placeholder="请选择"></el-multi-cascader></div>' +
+        '带过滤功能：<el-multi-cascader v-model="cascaderData2" :isFilter="true"  :options="testData" nodeKey="value" placeholder="请选择"></el-multi-cascader>' +
+        '</div>'
     })
 </script>
 </body>
